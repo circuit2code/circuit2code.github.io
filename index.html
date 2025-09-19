@@ -3,115 +3,454 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Circuit2Code - Embedded Systems & Programming Specialist</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Circuit2Code | Embedded Systems & Programming Specialist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #ec4899 100%);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .circuit-pattern {
+            background-image: url('http://static.photos/technology/1200x630/42');
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: overlay;
+        }
+    </style>
 </head>
-<body>
-    <!-- Header Section -->
-    <header>
-        <div class="container">
-            <nav>
-                <a href="#" class="logo">Circuit2<span>Code</span></a>
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#channels">My Channel</a></li>
-                    <li><a href="#connect">Connect</a></li>
-                </ul>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
+<body class="bg-gray-50 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm fixed w-full z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-indigo-600 flex items-center justify-center text-white font-bold">C2C</div>
+                        <span class="ml-2 text-xl font-bold text-gray-900">Circuit2Code</span>
+                    </div>
                 </div>
-            </nav>
+                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                    <a href="#home" class="text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                    <a href="#services" class="text-gray-500 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Services</a>
+                    <a href="#projects" class="text-gray-500 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+                    <a href="#about" class="text-gray-500 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">About</a>
+                    <a href="#contact" class="text-gray-500 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                </div>
+                <div class="-mr-2 flex items-center md:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-controls="mobile-menu" aria-expanded="false">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
         </div>
-    </header>
+    </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1>From Circuits to Code</h1>
-            <p>Simplifying complex tech concepts through my YouTube channels and helping aspiring developers master cloud technologies and programming skills.</p>
-            <div class="hero-btns">
-                <a href="#channels" class="btn">Explore My Channel</a>
-                <a href="#connect" class="btn btn-outline">Connect With Me</a>
+    <section id="home" class="hero-gradient text-white pt-32 pb-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-8 items-center">
+                <div class="mb-12 lg:mb-0" data-aos="fade-right">
+                    <h1 class="text-4xl md:text-5xl font-extrabold mb-6">Embedded Systems & Programming Solutions</h1>
+                    <p class="text-xl mb-8 opacity-90">Transforming ideas into functional hardware and software solutions with cutting-edge technology.</p>
+                    <div class="flex space-x-4">
+                        <a href="#contact" class="bg-white text-indigo-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition duration-300">Get Started</a>
+                        <a href="#projects" class="border-2 border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:bg-opacity-10 transition duration-300">View Projects</a>
+                    </div>
+                </div>
+                <div data-aos="fade-left">
+                    <img src="http://static.photos/technology/640x360/10" alt="Embedded Systems" class="rounded-lg shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Our Expertise</h2>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">Comprehensive solutions for your embedded and programming needs</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-xl card-hover" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-14 h-14 bg-indigo-100 rounded-lg flex items-center justify-center mb-6">
+                        <i data-feather="cpu" class="text-indigo-600 w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Embedded Systems Design</h3>
+                    <p class="text-gray-600">Custom hardware solutions with microcontrollers, sensors, and IoT integration for your specific requirements.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl card-hover" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-14 h-14 bg-indigo-100 rounded-lg flex items-center justify-center mb-6">
+                        <i data-feather="code" class="text-indigo-600 w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Firmware Development</h3>
+                    <p class="text-gray-600">Efficient, reliable firmware written in C/C++ with RTOS integration for optimal performance.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl card-hover" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-14 h-14 bg-indigo-100 rounded-lg flex items-center justify-center mb-6">
+                        <i data-feather="wifi" class="text-indigo-600 w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">IoT Solutions</h3>
+                    <p class="text-gray-600">End-to-end IoT implementations with cloud connectivity, data analytics, and remote monitoring capabilities.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl card-hover" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-14 h-14 bg-indigo-100 rounded-lg flex items-center justify-center mb-6">
+                        <i data-feather="smartphone" class="text-indigo-600 w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Mobile Applications</h3>
+                    <p class="text-gray-600">Cross-platform mobile apps that interface with your hardware products for seamless user experiences.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl card-hover" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-14 h-14 bg-indigo-100 rounded-lg flex items-center justify-center mb-6">
+                        <i data-feather="shield" class="text-indigo-600 w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Security Solutions</h3>
+                    <p class="text-gray-600">Secure boot, encryption, and authentication mechanisms to protect your devices from vulnerabilities.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl card-hover" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-14 h-14 bg-indigo-100 rounded-lg flex items-center justify-center mb-6">
+                        <i data-feather="tool" class="text-indigo-600 w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Prototyping & Testing</h3>
+                    <p class="text-gray-600">Rapid prototyping services with thorough testing procedures to ensure product reliability.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Featured Projects</h2>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">Real-world implementations of our expertise</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl overflow-hidden shadow-md card-hover" data-aos="fade-up" data-aos-delay="100">
+                    <img src="http://static.photos/technology/640x360/11" alt="Smart Home Controller" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Smart Home Controller</h3>
+                        <p class="text-gray-600 mb-4">Custom IoT controller for home automation with energy monitoring capabilities.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">ESP32</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">MQTT</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">React Native</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl overflow-hidden shadow-md card-hover" data-aos="fade-up" data-aos-delay="200">
+                    <img src="http://static.photos/technology/640x360/12" alt="Industrial Sensor Node" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Industrial Sensor Node</h3>
+                        <p class="text-gray-600 mb-4">Ruggedized wireless sensor node for harsh industrial environments with LoRaWAN connectivity.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">STM32</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">LoRa</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">FreeRTOS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl overflow-hidden shadow-md card-hover" data-aos="fade-up" data-aos-delay="300">
+                    <img src="http://static.photos/technology/640x360/13" alt="Medical Wearable" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Medical Wearable</h3>
+                        <p class="text-gray-600 mb-4">FDA-approved wearable device for continuous health monitoring with BLE connectivity.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">nRF52</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">BLE</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">FDA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12" data-aos="fade-up">
+                <a href="#" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
+                    View All Projects
+                    <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                </a>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-title">
-                <h2>About Us</h2>
-            </div>
-            <div class="about-content">
-                <div class="about-text" style="flex: 1; padding-right: 0;">
-                    <h3>Passionate Tech Educator</h3>
-                    <p>Hi there! I'm Surajit Ghosh, a cloud computing and programming expert with a passion for simplifying complex technical concepts. Through my YouTube channels, I create engaging content that helps students and professionals master cloud technologies and programming skills.</p>
-                    <p>Whether you're just starting your tech journey or looking to enhance your existing skills, my content is designed to make learning accessible, fun, and practical. I believe in breaking down difficult concepts into easy-to-understand pieces, focusing on hands-on learning and real-world applications.</p>
-                    <p>Having worked extensively with various cloud platforms and programming languages, I share my knowledge and experience to help you navigate the ever-evolving tech landscape.</p>
+    <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
+                <div class="mb-12 lg:mb-0" data-aos="fade-right">
+                    <img src="http://static.photos/technology/640x360/14" alt="About Circuit2Code" class="rounded-lg shadow-xl">
+                </div>
+                <div data-aos="fade-left">
+                    <h2 class="text-3xl font-extrabold text-gray-900 mb-6">About Circuit2Code</h2>
+                    <p class="text-gray-600 mb-6">Circuit2Code is a specialized engineering firm focused on bridging the gap between hardware and software. Founded by passionate engineers, we deliver innovative solutions that bring your electronic concepts to life.</p>
+                    <p class="text-gray-600 mb-6">With over 8 years of combined experience in embedded systems and software development, our team has successfully delivered projects across various industries including IoT, industrial automation, medical devices, and consumer electronics.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-8 w-8 rounded-full bg-indigo-100 text-indigo-600">
+                                    <i data-feather="check" class="w-4 h-4"></i>
+                                </div>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-600">Full-stack development from schematic design to production firmware</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-8 w-8 rounded-full bg-indigo-100 text-indigo-600">
+                                    <i data-feather="check" class="w-4 h-4"></i>
+                                </div>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-600">Agile development methodology with transparent communication</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-8 w-8 rounded-full bg-indigo-100 text-indigo-600">
+                                    <i data-feather="check" class="w-4 h-4"></i>
+                                </div>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-600">Comprehensive documentation and technical support</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Channels Section -->
-    <section id="channels" class="channels">
-        <div class="container">
-            <div class="section-title">
-                <h2>My YouTube Channel</h2>
+    <!-- Testimonials Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-indigo-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Client Testimonials</h2>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">What our clients say about our work</p>
             </div>
-            <div class="channel-cards">
-                <!-- Channel 1 -->
-                <div class="channel-card">
-                    <div class="channel-img">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMfvZppo9pgUDemqIrTyLWqRbjUj4mB2XkRwPkx-ZO2K6PAf7JWMPTtmqh&s=10" alt="Circuit2Code" />
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-sm" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0">
+                            <img class="h-10 w-10 rounded-full" src="http://static.photos/people/200x200/1" alt="">
+                        </div>
+                        <div class="ml-3">
+                            <p class="text-sm font-medium text-gray-900">Sarah Johnson</p>
+                            <p class="text-sm text-gray-500">CTO, TechSolutions Inc.</p>
+                        </div>
                     </div>
-                    <div class="channel-content">
-                        <h3>Circuit2Code</h3>
-                        <p>Programming and tech fun facts delivered in Hindi. Quick, engaging shorts that make learning tech concepts fun and accessible.</p>
-                        <p><strong>Language:</strong> Bengali</p>
-                        <p><strong>Focus:</strong> Programming concepts, Tech facts, Quick tips</p>
-                        <a href="https://www.youtube.com/@circuit2code" target="_blank">Visit Channel →</a>
+                    <p class="text-gray-600">"Circuit2Code delivered our IoT product ahead of schedule with exceptional quality. Their attention to detail in both hardware and software integration was impressive."</p>
+                    <div class="mt-4 flex text-yellow-400">
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0">
+                            <img class="h-10 w-10 rounded-full" src="http://static.photos/people/200x200/2" alt="">
+                        </div>
+                        <div class="ml-3">
+                            <p class="text-sm font-medium text-gray-900">Michael Chen</p>
+                            <p class="text-sm text-gray-500">Founder, MedTech Innovations</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Their expertise in medical device firmware was exactly what we needed. They navigated the complex regulatory requirements while delivering a robust solution."</p>
+                    <div class="mt-4 flex text-yellow-400">
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0">
+                            <img class="h-10 w-10 rounded-full" src="http://static.photos/people/200x200/3" alt="">
+                        </div>
+                        <div class="ml-3">
+                            <p class="text-sm font-medium text-gray-900">David Rodriguez</p>
+                            <p class="text-sm text-gray-500">Engineering Manager, Industrial Systems</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"The industrial sensor nodes they developed have been running flawlessly in harsh environments for over 2 years now. Their robust design approach is commendable."</p>
+                    <div class="mt-4 flex text-yellow-400">
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Connect Section -->
-    <section id="connect" class="connect">
-        <div class="container">
-            <div class="section-title">
-                <h2>Let's Connect</h2>
-            </div>
-            <div class="connect-content">
-                <h3>Need Help with Programming or Cloud Tech?</h3>
-                <p>Follow me on Instagram for tips, tricks, and personalized guidance on programming and cloud technologies. Feel free to reach out via email for collaboration opportunities or specific questions.</p>
-                
-                <div class="social-links">
-                    <a href="https://www.instagram.com/circuit2code?igsh=MXIxNW96NHRoMHNsag==" class="social-link" target="_blank">
-                        <i>IG</i>
-                    </a>
-                    <div class="social-text">Instagram: @circuit2code</div>
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
+                <div class="mb-12 lg:mb-0" data-aos="fade-right">
+                    <h2 class="text-3xl font-extrabold mb-6">Get In Touch</h2>
+                    <p class="text-gray-300 mb-8">Ready to start your next project? Contact us today to discuss how we can help bring your ideas to life.</p>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-10 w-10 rounded-full bg-indigo-600">
+                                    <i data-feather="mail" class="w-5 h-5"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <p class="text-base font-medium">Email</p>
+                                <p class="text-gray-300">contact@circuit2code.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-10 w-10 rounded-full bg-indigo-600">
+                                    <i data-feather="phone" class="w-5 h-5"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <p class="text-base font-medium">Phone</p>
+                                <p class="text-gray-300">+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-10 w-10 rounded-full bg-indigo-600">
+                                    <i data-feather="map-pin" class="w-5 h-5"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <p class="text-base font-medium">Location</p>
+                                <p class="text-gray-300">San Francisco, CA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-12">
+                        <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+                        <div class="flex space-x-4">
+                            <a href="https://instagram.com/circuit2code" target="_blank" class="bg-gray-800 hover:bg-gray-700 h-10 w-10 rounded-full flex items-center justify-center transition duration-300">
+                                <i data-feather="instagram" class="w-5 h-5"></i>
+                            </a>
+                            <a href="https://youtube.com/circuit2code" target="_blank" class="bg-gray-800 hover:bg-gray-700 h-10 w-10 rounded-full flex items-center justify-center transition duration-300">
+                                <i data-feather="youtube" class="w-5 h-5"></i>
+                            </a>
+                            <a href="https://github.com/circuit2code" target="_blank" class="bg-gray-800 hover:bg-gray-700 h-10 w-10 rounded-full flex items-center justify-center transition duration-300">
+                                <i data-feather="github" class="w-5 h-5"></i>
+                            </a>
+                            <a href="https://linkedin.com/company/circuit2code" target="_blank" class="bg-gray-800 hover:bg-gray-700 h-10 w-10 rounded-full flex items-center justify-center transition duration-300">
+                                <i data-feather="linkedin" class="w-5 h-5"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                
-                <p style="margin-top: 30px;">Or drop me an email at:</p>
-                <a href="mailto:circuit2code@gmail.com" style="color: white; font-weight: bold; font-size: 1.2rem; text-decoration: none;">circuit2code@gmail.com</a>
+                <div data-aos="fade-left">
+                    <div class="bg-gray-800 p-8 rounded-xl">
+                        <h3 class="text-2xl font-bold mb-6">Send Us a Message</h3>
+                        <form>
+                            <div class="mb-6">
+                                <label for="name" class="block text-sm font-medium mb-2">Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition duration-300" placeholder="Your name">
+                            </div>
+                            <div class="mb-6">
+                                <label for="email" class="block text-sm font-medium mb-2">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition duration-300" placeholder="your.email@example.com">
+                            </div>
+                            <div class="mb-6">
+                                <label for="subject" class="block text-sm font-medium mb-2">Subject</label>
+                                <input type="text" id="subject" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition duration-300" placeholder="Project inquiry">
+                            </div>
+                            <div class="mb-6">
+                                <label for="message" class="block text-sm font-medium mb-2">Message</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition duration-300" placeholder="Tell us about your project"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 px-6 rounded-lg transition duration-300">
+                                Send Message
+                                <i data-feather="send" class="ml-2 w-4 h-4 inline"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <p>© 2025 Circuit2Code. All Rights Reserved.</p>
-                <p>Embedded Systems & Programming Specialist</p>
+    <footer class="bg-gray-800 text-gray-300 py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">Circuit2Code</h3>
+                    <p class="text-sm">Specialized in embedded systems and programming solutions for innovative products.</p>
+                </div>
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-sm hover:text-white transition duration-300">Embedded Design</a></li>
+                        <li><a href="#" class="text-sm hover:text-white transition duration-300">Firmware Development</a></li>
+                        <li><a href="#" class="text-sm hover:text-white transition duration-300">IoT Solutions</a></li>
+                        <li><a href="#" class="text-sm hover:text-white transition duration-300">Prototyping</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-sm hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="#projects" class="text-sm hover:text-white transition duration-300">Projects</a></li>
+                        <li><a href="#" class="text-sm hover:text-white transition duration-300">Blog</a></li>
+                        <li><a href="#contact" class="text-sm hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">Connect</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://instagram.com/circuit2code" target="_blank" class="text-gray-400 hover:text-white transition duration-300">
+                            <i data-feather="instagram" class="w-5 h-5"></i>
+                        </a>
+                        <a href="https://youtube.com/circuit2code" target="_blank" class="text-gray-400 hover:text-white transition duration-300">
+                            <i data-feather="youtube" class="w-5 h-5"></i>
+                        </a>
+                        <a href="https://github.com/circuit2code" target="_blank" class="text-gray-400 hover:text-white transition duration-300">
+                            <i data-feather="github" class="w-5 h-5"></i>
+                        </a>
+                        <a href="https://linkedin.com/company/circuit2code" target="_blank" class="text-gray-400 hover:text-white transition duration-300">
+                            <i data-feather="linkedin" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-sm">© 2023 Circuit2Code. All rights reserved.</p>
+                <div class="mt-4 md:mt-0 flex space-x-6">
+                    <a href="#" class="text-sm hover:text-white transition duration-300">Privacy Policy</a>
+                    <a href="#" class="text-sm hover:text-white transition duration-300">Terms of Service</a>
+                </div>
             </div>
         </div>
     </footer>
 
-    <script src="js/scripts.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        feather.replace();
+    </script>
 </body>
 </html>
